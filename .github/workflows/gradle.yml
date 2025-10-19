@@ -19,4 +19,4 @@ jobs:
       - name: Start SUT
         run: java -jar ./artifacts/app-ibank.jar -P:profile=test &
       - name: Build with Gradle
-        run: ./gradlew test -Dselenide.headless=true --inf
+        run: ./gradlew test -D"selenide.headless=true" --info
